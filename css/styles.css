@@ -47,7 +47,7 @@ Links  color: #4D5AE5*/
   padding-left: 15px;
 } */
 h1,
-h2,
+
 h3,
 h4,
 p {
@@ -76,13 +76,14 @@ height: auto;
 .page-header .container {
     display:flex;
     flex-wrap: wrap;
+    align-items: center;
 }
 
 .page-header {
 width: 1440px;
 height: 72px;
 color:var(--lolg-studio-color);
-border-bottom: 1px, solid var(--footer-text-color);
+border-bottom: 1px solid var(--footer-text-color);
 }
 
 .container {
@@ -90,6 +91,7 @@ border-bottom: 1px, solid var(--footer-text-color);
   padding: 0 15px;
   margin: 0 auto;
 }
+
 
 /* Logo */
 .logo { 
@@ -247,9 +249,6 @@ background-color:var(--hero-background-color)
  .section{
     background:var(--main-color);
  }
-.section-team{
-    background: var(--main-color);
-}
 
     /* Main */
     /* Section2 */
@@ -323,7 +322,7 @@ align-items: center;
 .section-examp-pics {
 width: 360px;
 height: 300px;
-flex-basis: ((100% - 48px) / 3);
+flex-basis: ((100% - 48px)/ 3);
 }
 
 /* Section 4 */
@@ -331,8 +330,11 @@ flex-basis: ((100% - 48px) / 3);
 background-color: var(--lolg-studio-color);
 width: 1440px;
 height: 732px;
+margin: 120px;
 }
-
+.section-team{
+background: var(--lolg-studio-color);
+}
 
 .section-discription {
 font-weight: 700;
@@ -349,30 +351,36 @@ margin-bottom: 72px;
     flex-wrap: wrap;  
 }
 
+.team-pic {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 0px 32px;
+    gap: 32px;
+    flex-basis: ((100% - 72px)/ 4);
+    }
+    
 .team-wrapper {
 background-color: var(--main-color);
 text-align: center;
 width: 264px;
 height: 380px;
+box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+border-radius: 0px 0px 4px 4px;
 }
+
  .section-team {
-    border-bottom: 1px, solid var(--lolg-studio-color);
+    border-bottom: 1px solid var(--lolg-studio-color);
  }
 
-.titel-team {
-    margin-top: 32px;
+.team-content {
+    padding: 32px 16px;
+}
+
+h3 > .section-title > .titel-team {
     margin-bottom: 8px;
 }
-
-.team-pic {
-flex-basis: ((100% - 72px) / 4);
-margin-bottom: 32px;
-}
-
-.section-title {
-margin-bottom: 8px;
-}
-
 /* Scrol Portfolio */
 .secondary-button {
     font-weight: 500;
@@ -416,12 +424,27 @@ margin-bottom: 8px;
     flex-direction: row;
     flex-wrap: wrap;
     }
+    
+    .apps-image {
+    width: 360px;
+     height: 420px;
+     background-color: var(--main-color);
+     border: 1px solid var(--footer-text-color)
+    }
+
+ .section-title .apps-titel {
+        padding-top: 32px;
+        padding-bottom: 8px;
+     }
+
+     p .section-p .apps-p {
+        padding-bottom: 32px;
+     }
+
 
     .apps-image  {
         flex-basis: calc((100% - 48px) / 3);
         }
-        
-
 
 .visually-hidden
     {
