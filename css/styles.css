@@ -89,10 +89,12 @@ border-bottom: 1px solid var(--footer-text-color);
 .container {
   max-width: 1158px;
   padding: 0 15px;
-  margin: 0 auto;
 }
 
-
+.page-header-container {
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
 /* Logo */
 .logo { 
    color:var(--headings-color);
@@ -322,7 +324,7 @@ align-items: center;
 .section-examp-pics {
 width: 360px;
 height: 300px;
-flex-basis: ((100% - 48px)/ 3);
+flex-basis: calc((100% - 48px)/ 3);
 }
 
 /* Section 4 */
@@ -348,18 +350,13 @@ margin-bottom: 72px;
     display: flex;
     gap: 24px;
     flex-direction: row;
-    flex-wrap: wrap;  
+    flex-wrap: wrap;   
 }
 
-.team-pic {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 0px 0px 32px;
-    gap: 32px;
-    flex-basis: ((100% - 72px)/ 4);
-    }
+.team-pics {
+   
+    flex-basis: calc((100% - 72px)/ 4);
+}
     
 .team-wrapper {
 background-color: var(--main-color);
@@ -376,21 +373,40 @@ border-radius: 0px 0px 4px 4px;
 
 .team-content {
     padding: 32px 16px;
+    overflow: hidden;
 }
 
 h3 > .section-title > .titel-team {
     margin-bottom: 8px;
 }
 /* Scrol Portfolio */
+
+.container-scrol-btn {
+    width: 586px;
+    height: 48px;
+    margin-top: 96px;
+    margin-bottom: 72px;
+    margin-left: auto;
+    margin-right: auto;
+}
 .secondary-button {
     font-weight: 500;
     font-size: 16px;
-    line-height: 24px;
+    line-height: 1.5;
     width: 68px;
     height: 24px;
     color: var(--link-color);
     border: 1px solid var(--footer-text-color);
     border-radius: 4px;
+}
+.scrol-btn{
+    box-sizing: content-box;
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+    flex-basis: calc((100% - 192px)/5);
+    padding: 12px 24px;
+
 }
 
 .section .secondary-button:hover,
@@ -407,13 +423,10 @@ h3 > .section-title > .titel-team {
     .scrol {
     width: 586px;
     height: 48px;
-    margin-left: 427px;
-    margin-right: 168px;
     display: flex;  
     gap: 24px; 
     flex-direction: row;
-    align-items: flex-start;
-    justify-content: space-between;
+    align-items: center;
     }
 
 /* Apps */
@@ -432,15 +445,10 @@ h3 > .section-title > .titel-team {
      border: 1px solid var(--footer-text-color)
     }
 
- .section-title .apps-titel {
-        padding-top: 32px;
-        padding-bottom: 8px;
-     }
-
-     p .section-p .apps-p {
-        padding-bottom: 32px;
-     }
-
+    .apps-content {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    }
 
     .apps-image  {
         flex-basis: calc((100% - 48px) / 3);
