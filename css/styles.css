@@ -89,8 +89,12 @@ border-bottom: 1px solid var(--footer-text-color);
 .container {
   max-width: 1158px;
   padding: 0 15px;
+  margin: 0 auto;
 }
 
+.container .contaener-team {
+    margin: 120px;
+}
 .page-header-container {
     margin-top: 24px;
     margin-bottom: 24px;
@@ -490,7 +494,6 @@ h3 > .section-title > .titel-team {
     text-decoration: none;
  }
  .logo-web {
-   
     text-decoration: none; 
  }
 footer{
