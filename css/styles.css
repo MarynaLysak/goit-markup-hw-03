@@ -47,19 +47,16 @@ Links  color: #4D5AE5*/
   padding-left: 15px;
 } */
 h1,
-
+h2,
 h3,
 h4,
-p {
-margin-top: 0;
-margin-bottom: 0;
-}
-
+h5,
+h6,
+p,
 ul,
 ol {
-    margin-top: 0;
-    margin-bottom: 0;
-    padding-left: 0;
+margin: 0;
+padding: 0;
 }
 
 img {
@@ -71,17 +68,20 @@ height: auto;
     cursor: pointer;
  }
 
+ .section {
+    padding: 120px 0;
+ }
+
 /* Header */
 
 .page-header .container {
     display:flex;
     flex-wrap: wrap;
     align-items: center;
+    justify-content: space-between;
 }
 
 .page-header {
-width: 1440px;
-height: 72px;
 color:var(--lolg-studio-color);
 border-bottom: 1px solid var(--footer-text-color);
 }
@@ -95,10 +95,7 @@ border-bottom: 1px solid var(--footer-text-color);
 .container .contaener-team {
     margin: 120px;
 }
-.page-header-container {
-    margin-top: 24px;
-    margin-bottom: 24px;
-}
+
 /* Logo */
 .logo { 
    color:var(--headings-color);
@@ -144,6 +141,10 @@ ul {
     list-style: none;
 }
 
+.site-link {
+    padding: 24px 0;
+    display: block;
+}
 .site-nav {   
     display: flex;
     flex-direction: row;
@@ -151,10 +152,6 @@ ul {
     padding: 0px;
     gap: 40px;
     margin-left: 76px;
-    
-    width: 261px;
-    height: 24px;
-
      }
 
 .navigation, .site-nav {
@@ -196,7 +193,7 @@ text-decoration: none;
     flex-direction: row;
     justify-content: flex-end;
     align-items: center;
-    margin-left: 332px;
+   
     
 }
 .address-phone {
@@ -204,28 +201,25 @@ text-decoration: none;
 }
 /* HeroSection1 */
 .hero {
-display: flex;
-flex-direction: column;
-align-items: center;
-padding: 185px 461px;
+
 gap: 48px;
-
-width: 1440px;
-height: 594px;
-margin-bottom: 126px;
-
+padding: 188px 0;
 background-color:var(--hero-background-color)
+}
 
-    
-    
+.hero-blok {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .hero-titel{
-    font-weight: 700;
     font-size: 56px;
     line-height: 60px;
     color:var(--main-color);
     text-align: center;
     letter-spacing: 0.02em;
+    max-width: 496px;
+    margin-bottom: 48px;
 } 
 /* Main Button */
 .main-button {
@@ -252,10 +246,6 @@ background-color:var(--hero-background-color)
     border-radius: 4px;
 }
 
- .section{
-    background:var(--main-color);
- }
-
     /* Main */
     /* Section2 */
 body {
@@ -263,34 +253,24 @@ body {
 }
 .section-title{ 
     font-size: 20px;
-    line-height: 24px;
+    line-height: 1.2;
     font-weight: 500;
+    margin-bottom: 72px;
     color: var(--headings-color) 
-
     }
+
 .section-discription .section-title{
     color:var(--headings-color) 
     }
-  
-.section-discription{
-    font-size: 36px;
-    font-weight: 700;
-    line-height: 40px;
-    color: var(--headings-color) 
-    }
 
 .section-p{
-    font-size: 16px;
-    line-height: 24px;
-    font-weight: 400;
+    line-height: 1.5;
     color: var(--text-color) 
 }
 
 .section-work {
-    display: block;
-width: 1440px;
-height: 104px;
-margin-bottom: 120px;
+display: block;
+padding-bottom: 0;
 }
 
 .work-list {
@@ -310,12 +290,6 @@ flex-basis: calc((100% - 72px) / 4);
 text-align: center;
 width: 1158px;
 }
-.section-examp {
-width: 1158px;
-height: 532px;
-margin-bottom: 120px;
-margin-left: 141px;
-}
 
 .examples {
 display: flex;
@@ -326,8 +300,6 @@ align-items: center;
 }
 
 .section-examp-pics {
-width: 360px;
-height: 300px;
 flex-basis: calc((100% - 48px)/ 3);
 }
 
@@ -343,12 +315,19 @@ background: var(--lolg-studio-color);
 }
 
 .section-discription {
-font-weight: 700;
 font-size: 36px;
 line-height: 40px;
-padding-top: 120px;
-margin-bottom: 72px;
 }
+
+  
+.team > .team-pics-title{
+    font-size: 36px;
+    line-height: 1.11;
+    text-align: center;
+    margin-bottom: 8px;
+    color: var(--headings-color) 
+    }
+
 
 .team {
     display: flex;
@@ -358,17 +337,12 @@ margin-bottom: 72px;
 }
 
 .team-pics {
-   
-    flex-basis: calc((100% - 72px)/ 4);
-}
-    
-.team-wrapper {
-background-color: var(--main-color);
-text-align: center;
-width: 264px;
-height: 380px;
-box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-border-radius: 0px 0px 4px 4px;
+   flex-basis: calc((100% - 72px)/ 4);
+   background-color: var(--main-color);
+   text-align: center;
+   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+   border-radius: 0px 0px 4px 4px;
+   min-width: 250px;
 }
 
  .section-team {
@@ -380,37 +354,17 @@ border-radius: 0px 0px 4px 4px;
     overflow: hidden;
 }
 
-h3 > .section-title > .titel-team {
-    margin-bottom: 8px;
-}
 /* Scrol Portfolio */
 
-.container-scrol-btn {
-    width: 586px;
-    height: 48px;
-    margin-top: 96px;
-    margin-bottom: 72px;
-    margin-left: auto;
-    margin-right: auto;
-}
 .secondary-button {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
-    width: 68px;
-    height: 24px;
+    padding: 12px 24px;
+    
     color: var(--link-color);
     border: 1px solid var(--footer-text-color);
     border-radius: 4px;
-}
-.scrol-btn{
-    box-sizing: content-box;
-    display: flex;
-    gap: 24px;
-    justify-content: center;
-    flex-basis: calc((100% - 192px)/5);
-    padding: 12px 24px;
-
 }
 
 .section .secondary-button:hover,
@@ -425,12 +379,12 @@ h3 > .section-title > .titel-team {
     background-color: var(--main-color);
 }
     .scrol {
-    width: 586px;
-    height: 48px;
     display: flex;  
     gap: 24px; 
-    flex-direction: row;
     align-items: center;
+    justify-content: center;
+    margin-bottom: 72px;
+    margin-top: 96px;
     }
 
 /* Apps */
@@ -443,17 +397,14 @@ h3 > .section-title > .titel-team {
     }
     
     .apps-image {
-    width: 360px;
-     height: 420px;
      background-color: var(--main-color);
      border: 1px solid var(--footer-text-color)
     }
 
-    .apps-content {
-    padding-top: 32px;
-    padding-bottom: 32px;
+    .section-title-apps {
+        margin-bottom: 8px;
+        margin-top: 32px;
     }
-
     .apps-image  {
         flex-basis: calc((100% - 48px) / 3);
         }
@@ -499,17 +450,14 @@ h3 > .section-title > .titel-team {
 footer{
     background: var(--hero-background-color);
     color: var(--footer-text-color);
-    font-family: Roboto;
-    font-weight: 400;
     font-size: 16px;
     line-height: 24px;
-
-width: 1440px;
-height: 310px;
 }
-.page-footer {
+
+.page-footer-container {
     padding: 100px 1020px 100px 156px;
 }
 
-
-
+.footer-p {
+    max-width: 264px;
+}
