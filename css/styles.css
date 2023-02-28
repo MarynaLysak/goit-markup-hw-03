@@ -254,7 +254,6 @@ body {
 .section-title{ 
     font-size: 20px;
     line-height: 1.2;
-    font-weight: 500;
     margin-bottom: 72px;
     color: var(--headings-color) 
     }
@@ -279,6 +278,7 @@ gap: 24px;
 align-items: center;
 flex-wrap: wrap;
 height: 104px;
+margin-bottom: 120px;
 }
 .work-item {
 flex-basis: calc((100% - 72px) / 4);
@@ -288,7 +288,9 @@ flex-basis: calc((100% - 72px) / 4);
 
 .section-discription {
 text-align: center;
-width: 1158px;
+margin-bottom: 72px;
+color: var(--headings-color) 
+
 }
 
 .examples {
